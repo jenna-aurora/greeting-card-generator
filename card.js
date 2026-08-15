@@ -17,5 +17,10 @@ function makeCard() {
     "Dear " + friendName + ", you are as " + adjective +
     " as a " + noun + ". Happy birthday from the generator.";
 }
-
+function randomNumber(a, b) {
+  return Math.floor(Math.random() * (b - a + 1)) + a;
+}
+	setInterval(makeCard, 5000);
+	setInterval(makeThankYouCard, 5000);
+	makeCard();
 makeButton.addEventListener("click", makeCard);
