@@ -7,25 +7,27 @@
   <section id="order-section">
   <h2>Order a card</h2>
   <label>A name
-    <input id="name-input" type="text" />
+    <input id="name" type="text" />
   </label>
   <label>An adjective
-    <input id="adjective-input" type="text" />
+    <input id="adjective" type="text" />
   </label>
   <label>A noun
-    <input id="noun-input" type="text" />
+    <input id="noun" type="text" />
   </label>
   <button type="button" id="make-button">Make my card</button>
   <button type="button" id="surprise-button">Surprise me</button>
+  <button type="button" id="reset-button"></button>
 </section>
 <section id="card-section" hidden>
-  <article>
-    <p id="card-text">Your card will appear here.</p>
-  </article>
+	<h2>Your Card</h2>
+	<p id="card-text">Your card will appear here.</p>
+	<p id="bonus-line" hidden>You have excellent taste in cards.</p>
 </section>
   </main>
+  <script src="card.js"></script>
  </body>
 	</head>
 
-
-<script src="card.js"></script>
+<article>
+  </article>
