@@ -1,34 +1,34 @@
 
 
-<!Document HTML>
+<!D0TYPE html>
+<html lang="en">
 	<head>
+ <meta charset="UTF-8">
+ <title>Greeting Card Generator</title>
+	</head>	
  <body>
-  <main>
+	<h1>Greeting Card Generator</h1>
+ <main>
   <section id="order-section">
-  <h2>Order a card</h2>
-  <label>A name
-    <input id="name" type="text" />
-  </label>
-  <label>An adjective
-    <input id="adjective" type="text" />
-  </label>
-  <label>A noun
-    <input id="noun" type="text" />
-  </label>
-  <button type="button" id="make-button">Make my card</button>
-  <button type="button" id="surprise-button">Surprise me</button>
-  <button type="button" id="reset-button"></button>
-</section>
-<section id="card-section" hidden>
+   <h2>Order a card</h2>
+	<label for="name">Name:</label>
+     <input id="name" type="text">
+  <label for="adjective">Adjective:</label>
+    <input id="adjective" type="text">
+  <label for="noun">Noun:</label>
+    <input id="noun" type="text">
+   <button type="button" id="make-button">Make my card</button>
+   <button type="button" id="surprise-button">Surprise me</button>
+   <button type="button" id="reset-button">Reset</button>
+  <section id="card-section" hidden>
  <article>
-	<h2>Your Card</h2>
+   <h2>Your Card</h2>
 	<p id="card-text">Your card will appear here.</p>
-	<p id="bonus-line" hidden>You have excellent taste in cards.</p>
-  </article>
+	<p id="closing-text"></p>
+	<p id="bonus-line" hidden>You have unlocked a secret bonus message!!</p>
+</article>
 </section>
-  </main>
-  <script src="card.js"></script>
+</main>
+ <script src="card.js"></script>
  </body>
-	</head>
-
-
+ </html>
