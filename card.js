@@ -11,9 +11,7 @@ let cardText = document.getElementById("card-text");
 let cardSection = document.getElementById("card-section");
 let closingText = document.getElementById("closing-text");
 let bonusLine = document.getElementById("bonus-line");
-let resetButton = document.getElementById("reset-button");
-let tickLine = document.getElementById("tick-line");
-let tickBonus = document.getElementById("tick-bonus");
+
 
 
 let cardsMade = 0;	
@@ -49,40 +47,6 @@ startTicking();
 }
  
  
- let tickCount = 0;
-let tickLimit = 10;
-let tickIntervalID = null;
-
-function startTicking() {
-  tickCount = 0;
-  tickLine.textContent = "Tick 0";
-  tickBonus.hidden = true;
-
-  tickIntervalID = setInterval(function () {
-    tickCount++;
-    tickLine.textContent = "Tick " + tickCount;
-
-    if (tickCount === tickLimit) {
-      clearInterval(tickIntervalID);
-      tickBonus.textContent = "You have unlocked a secret bonus message!!";
-      tickBonus.hidden = false;
-	}
-  }, 400);
-}
- 
- 
-function resetGenerator() {
-  nameInput.value = "";
-  adjectiveInput.value = "";
-  nounInput.value = "";
-
-  cardSection.hidden = true;
- 
- clearInterval(tickIntervalID);
-  tickLine.textContent = "";
-  tickBonus.hidden = true;
-  tickBonus.textContent = ""; 
-}
 
 
 
