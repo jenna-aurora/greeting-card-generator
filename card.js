@@ -11,7 +11,9 @@ let cardText = document.getElementById("card-text");
 let cardSection = document.getElementById("card-section");
 let closingText = document.getElementById("closing-text");
 let bonusLine = document.getElementById("bonus-line");
-
+let resetButton = document.getElementById("reset-button");
+let tickLine = document.getElementById("tick-line");
+let tickBonus = document.getElementById("tick-bonus");
 
 
 let cardsMade = 0;	
@@ -45,14 +47,6 @@ if (cardsMade >= 5) {
  }
 startTicking(); 
 }
- 
- 
-setInterval(tick, 1000);
-
-let resetButton = document.getElementById("reset-button");
-let tickLine = document.getElementById("tick-line");
-let tickBonus = document.getElementById("tick-bonus");
-
 
 
  let tickCount = 0;
